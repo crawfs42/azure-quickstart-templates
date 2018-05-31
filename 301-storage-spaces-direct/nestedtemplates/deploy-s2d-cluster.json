@@ -139,8 +139,13 @@
       "name": "[variables('vmAvailabilitySetName')]",
       "apiVersion": "2015-06-15",
       "location": "[parameters('location')]",
-      "properties": {}
-    },
+      "sku": {
++        "name": "Aligned"
++    },
++    "properties": {
++      "platformFaultDomainCount": 2,
++      "platformUpdateDomainCount": 5
++    }  
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('witnessStorageName')]",
