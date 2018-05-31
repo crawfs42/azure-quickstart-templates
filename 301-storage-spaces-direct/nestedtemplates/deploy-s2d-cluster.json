@@ -145,7 +145,7 @@
 +    "properties": {
 +      "platformFaultDomainCount": 2,
 +      "platformUpdateDomainCount": 5
-+    }  
++    },  
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('witnessStorageName')]",
