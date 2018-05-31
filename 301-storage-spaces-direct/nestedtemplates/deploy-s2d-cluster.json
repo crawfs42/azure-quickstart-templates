@@ -141,7 +141,7 @@
       "name": "[variables('vmAvailabilitySetName')]",
       "properties": {
         "platformFaultDomainCount": 2,
-+      "platformUpdateDomainCount": 5
+        "platformUpdateDomainCount": 5
     },
     "sku": {
         "name": "Aligned"
