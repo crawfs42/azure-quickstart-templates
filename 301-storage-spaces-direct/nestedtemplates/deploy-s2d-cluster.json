@@ -140,8 +140,8 @@
       "location": "[resourceGroup().location]",
       "name": "[variables('vmAvailabilitySetName')]",
       "properties": {
-        "platformFaultDomainCount": 2,
-        "platformUpdateDomainCount": 5
+         "platformFaultDomainCount": 2,
+         "platformUpdateDomainCount": 5
     },
     "sku": {
         "name": "Aligned"
