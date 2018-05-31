@@ -145,7 +145,7 @@
     },
     "sku": {
         "name": "Aligned"
-    }
+    },
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('witnessStorageName')]",
