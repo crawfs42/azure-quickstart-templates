@@ -135,17 +135,17 @@
   },
   "resources": [
     {
-      "type": "Microsoft.Compute/availabilitySets",
-      "name": "[variables('vmAvailabilitySetName')]",
       "apiVersion": "2017-03-30",
-      "location": "[parameters('location')]",
-      "sku": {
-+        "name": "Aligned"
-+    },
-+    "properties": {
-+      "platformFaultDomainCount": 2,
+      "type": "Microsoft.Compute/availabilitySets",
+      "location": "[resourceGroup().location]",
+      "name": "[variables('vmAvailabilitySetName')]",
+      "properties": {
+        "platformFaultDomainCount": 2,
 +      "platformUpdateDomainCount": 5
-+    },  
+    },
+    "sku": {
+        "name": "Aligned"
+    }
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('witnessStorageName')]",
